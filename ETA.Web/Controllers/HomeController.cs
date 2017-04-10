@@ -9,15 +9,15 @@ namespace ETA.Web.Controllers
 {
     public class HomeController : Controller
     {
-        private ETAContext context;
+        private ETAContext _context;
 
-        public HomeController(ETAContext _context)
+        public HomeController(ETAContext context)
         {
-            context = _context;
+            _context = context;
         }
         public IActionResult Index()
         {
-            var mydata = context.Group.FirstOrDefault();
+            var mydata = _context.Group.FirstOrDefault();
             return View();
         }
 
