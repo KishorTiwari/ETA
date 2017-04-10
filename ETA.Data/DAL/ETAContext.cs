@@ -19,9 +19,9 @@ namespace ETA.Data.DAL
         public DbSet<Transaction> Transaction { get; set; }
         public DbSet<Group_User> Group_User { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
