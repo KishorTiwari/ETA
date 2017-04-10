@@ -8,8 +8,8 @@ using ETA.Data.DAL;
 namespace ETA.Data.Migrations
 {
     [DbContext(typeof(ETAContext))]
-    [Migration("20170410011846_initialdatabase")]
-    partial class initialdatabase
+    [Migration("20170410080228_intial")]
+    partial class intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
